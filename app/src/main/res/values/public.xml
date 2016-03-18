@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="array" name="wifi_icons" id="0x7f080036" />
+    <public type="array" name="wifi_values" id="0x7f080037" />
+</resources>

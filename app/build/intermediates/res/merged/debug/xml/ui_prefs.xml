@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Mods" />
+    <SwitchPreference android:title="Internet speed" android:key="tweaks_speed_view" android:summaryOn="Show" android:summaryOff="Hide" />
+    <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Download speed color" android:key="tweaks_speed_color_download" android:summary="Choose download speed color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
+    <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Upload speed color" android:key="tweaks_speed_color_upload" android:summary="Choose upload speed color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
+</PreferenceScreen><!-- From: file:/C:/Users/omaro/AndroidStudioProjects/CustomSettingsForDevs/app/src/main/res/xml/ui_prefs.xml -->

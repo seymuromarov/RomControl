@@ -1,0 +1,180 @@
+<resources>
+    <string name="app_name">Mods</string>
+    <string name="drawer_open">Menu opened</string>
+    <string name="drawer_close">Menu closed</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="nav_drawer_items">
+        <item>SystemUI Mods</item>
+        <item>Launcher</item>
+        <item>Phone Mods</item>
+        <item>Framework and General</item>
+        <item>Useful Apps</item>
+        <item>Set Theme</item>
+    </string-array>
+    <string-array name="clock_position_entries">
+        <item>Right clock</item>
+        <item>Center Clock</item>
+        <item>Left Clock</item>
+    </string-array>
+    <string-array name="clock_position_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+	    <string-array name="TrafficName">
+        <item>Do not show</item>
+        <item>Show only download</item>
+        <item>Show only upload</item>
+        <item>Two-line display upload and download</item>
+        <item>The combined display upload and download</item>
+    </string-array>
+    <string-array name="TrafficValue">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+	    <string-array name="traffic_style_entries">
+        <item>Right</item>
+        <item>Left</item>
+    </string-array>
+    <string-array name="traffic_style_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+	<string-array name="show_network_speed_entries">
+        <item>Refresh interval 0.5 seconds</item>
+        <item>Refresh interval 1 second</item>
+        <item>Refresh Interval 2 seconds</item>
+        <item>Refresh Interval 3 seconds</item>
+        <item>Refresh Interval 4 seconds</item>
+        <item>Refresh Interval 5 seconds</item>
+    </string-array>
+    <string-array name="show_network_speed_values">
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+    </string-array>
+    <string-array name="some_entries">
+        <item>Right clock</item>
+        <item>Center Clock</item>
+        <item>Left Clock</item>
+    </string-array>
+    <string-array name="some_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on Color to apply</string>
+    <string-array name="theme_items">
+        <item>Dark theme</item>
+        <item>Light theme</item>
+    </string-array>
+    <string name="missing_su">Your device is either not rooted or the app was denied root permissions.\n\nPlease check your root/su status and try again later.</string>
+    <string name="exit">Exit App</string>
+    <string name="gaining_root">Acquiring root access. Please wait...</string>
+    <string name="missing_su_title">Could not get root access</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="theme_chooser_dialog_title">Choose Theme</string>
+    <string name="app_reboot_required_title">App Reboot Required</string>
+    <string name="app_reboot_required_message">%1$s reboot is required for the changes to take effect.\n\nReboot now?</string>
+	<string name="lockscreen_city_weather_text_color_title">Lockscreen city weather text color</string>
+	<string name="lockscreen_city_weather_text_color_summary">Change lockscreen city weather text color</string>
+	<string name="lockscreen_temp_weather_text_color_title">Lockscreen temp weather text color</string>
+	<string name="lockscreen_temp_weather_text_color_summary">Change lockscreen temp weather text color</string>
+	<string name="lockscreen_weather_text_color_title">Lockscreen weather text color</string>
+	<string name="lockscreen_weather_text_color_summary">Change lockscreen weather text color</string>
+	<string name="lockscreen_alarm_text_color_title">Lockscreen alarm text color</string>
+	<string name="lockscreen_alarm_text_color_summary">Change lockscreen alarm text color</string>
+	<string name="lockscreen_owner_text_color_title">Lockscreen owner text color</string>
+	<string name="lockscreen_owner_text_color_summary">Change lockscreen owner text color</string>
+	<string name="lockscreen_degree_weather_text_color_title">Lockscreen degree weather text color</string>
+	<string name="lockscreen_degree_weather_text_color_summary">Change lockscreen degree weather text color</string>
+	<string name="lockscreen_max_temp_weather_text_color_title">Lockscreen max temp weather text color</string>
+	<string name="lockscreen_max_temp_weather_text_color_summary">Change lockscreen max temp weather text color</string>
+	<string name="lockscreen_min_temp_weather_text_color_title">Lockscreen min temp weather text color</string>
+	<string name="lockscreen_min_temp_weather_text_color_summary">Change lockscreen min temp weather text color</string>
+	<string name="lockscreen_sunrise_text_color_title">Lockscreen sunrise text color</string>
+	<string name="lockscreen_sunrise_text_color_summary">Change lockscreen sunrise text color</string>
+	<string name="lockscreen_sunset_text_color_title">Lockscreen sunset text color</string>
+	<string name="lockscreen_sunset_text_color_summary">Change lockscreen sunset text color</string>
+	<string name="lockscreen_barometer_text_color_title">Lockscreen barometer text color</string>
+	<string name="lockscreen_barometer_text_color_summary">Change barometer text color</string>
+	<string name="lockscreen_show_pressure_title">Lockscreen show pressure</string>
+	<string name="summaryOn">Enabled</string>
+	<string name="summaryOff">Disabled</string>
+	<string name="show_icon_on">Show</string>
+	<string name="show_icon_off">Hide</string>
+    <string name="music_controls_tital">Music controls</string>
+    <string name="music_controls">Music controls</string>
+    <string name="skip_music_summary">Open music controls</string>
+    <string name="time_out">Time out</string>
+    <string name="volume_up_action">Volume up action</string>
+    <string name="volume_down_action">Volume down action</string>
+    <string name="custom_power">Custom power key</string>
+    <string name="custom_power_lock">Power off</string>
+    <string name="custom_power_traffic">Data network mode</string>
+    <string name="custom_power_air">Airplane mode</string>
+    <string name="custom_power_rboot">Restart</string>
+    <string name="custom_power_screen">Screen capture</string>
+    <string name="custom_power_touch">Touch</string>
+    <string name="custom_power_emergency">Emergency mode</string>
+    <string name="custom_power_screenrecord">Screenrecord</string>
+    <string name="custom_power_sound">Sound mode</string>
+    <string name="ok_sheard">OK</string>
+    <string name="no_sheard">NO</string>
+    <string name="custom_buttons">Customize button behaviors</string>
+    <string name="haptic_feedback">Haptic feedback</string>
+    <string name="double_tap_home">Double tap home</string>
+    <string name="double_tap_home_assignment">Double tap assignment</string>
+    <string name="double_tap_home_application">Double tap application</string>
+    <string name="triple_tap_home">Triple tap home</string>
+    <string name="triple_tap_home_assignment">Triple tap assignment</string>
+    <string name="triple_tap_home_application">Triple tap application</string>
+    <string name="long_press_home">Long press home</string>
+    <string name="long_press_home_assignment">Long press assignment</string>
+    <string name="long_press_home_application">Long press application</string>
+    <string name="short_press_left">Short press left</string>
+    <string name="short_press_left_assignment">Short press assignment</string>
+    <string name="short_press_left_application">Short press application</string>
+    <string name="long_press_left">Long press left</string>
+    <string name="long_press_left_assignment">Long press assignment</string>
+    <string name="long_press_left_application">Long press application</string>
+    <string name="long_press_right">Long press right</string>
+    <string name="long_press_right_assignment">Long press assignment</string>
+    <string name="long_press_right_application">Long press application</string>
+    <string name="double_tap_power">Double tap power</string>
+    <string name="double_tap_power_assignment">Double tap assignment</string>
+    <string name="double_tap_power_application">Double tap application</string>
+    <string name="wallpaper_scroll">Wallpaper scroll</string>
+    <string name="launcher_looping">Launcher looping</string>
+    <string name="launcher_rotation">Launcher rotation</string>
+    <string name="launcher_text_color">Launcher text color</string>
+    <string name="home_wakeup_screen">Home wakeup screen</string>
+    <string name="listview_off">Off</string>
+    <string name="listview_wave_left">Wave (left)</string>
+    <string name="listview_wave_right">Wave (right)</string>
+    <string name="listview_alpha">Alpha</string>
+    <string name="listview_scale">Scale</string>
+    <string name="listview_stack_top">Stack (top)</string>
+    <string name="listview_stack_bottom">Stack (bottom)</string>
+    <string name="listview_unfold">Unfold</string>
+    <string name="listview_fold">Fold</string>
+    <string name="listview_translate_left">Translate (left)</string>
+    <string name="listview_translate_right">Translate (right)</string>
+    <string name="listview_rotate">Rotate</string>
+    <string name="listview_accelerate_interpolator">Accelerate</string>
+    <string name="listview_decelerate_interpolator">Decelerate</string>
+    <string name="listview_accelerate_decelerate_interpolator">Accelerate decelerate</string>
+    <string name="listview_anticipate_interpolator">Anticipate</string>
+    <string name="listview_overshoot_interpolator">Overshoot</string>
+    <string name="listview_anticipate_overshoot_interpolator">Anticipate overshoot</string>
+    <string name="listview_bounce_interpolator">Bounce</string>
+</resources>

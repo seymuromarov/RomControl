@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\omaro\AndroidStudioProjects\CustomSettingsForDevs\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="C:\Users\omaro\AndroidStudioProjects\CustomSettingsForDevs\app\build\intermediates\pre-dexed\debug\classes-f35805e914fa8c7b470e4dabd5c90f53cc7f534c.jar" />
+    </item>
+    <item
+        jar="C:\Users\omaro\AndroidStudioProjects\CustomSettingsForDevs\app\libs\RootTools.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5acf020c8db3eb87824b2f47949294732f04b019">
+        <dex dex="C:\Users\omaro\AndroidStudioProjects\CustomSettingsForDevs\app\build\intermediates\pre-dexed\debug\RootTools-d39365566777bd15785240d0842944fcceafe1cd.jar" />
+    </item>
+    <item
+        jar="C:\Users\omaro\AndroidStudioProjects\CustomSettingsForDevs\app\build\intermediates\exploded-aar\com.github.shell-software\viewmover\1.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d065ab6e064a1398750b52b1108e52c6d5e77807">
+        <dex dex="C:\Users\omaro\AndroidStudioProjects\CustomSettingsForDevs\app\build\intermediates\pre-dexed\debug\classes-497482658ebd012a5b1c35bd75a1b1b3331dd58b.jar" />
+    </item>
+    <item
+        jar="C:\Users\omaro\AndroidStudioProjects\CustomSettingsForDevs\app\build\intermediates\exploded-aar\com.github.shell-software\fab\1.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="cf52449fa39e6e61964c43f880ea827e0bcc8c9c">
+        <dex dex="C:\Users\omaro\AndroidStudioProjects\CustomSettingsForDevs\app\build\intermediates\pre-dexed\debug\classes-e2e9191207cdf6d641ab2b51ba2777f2c0416f27.jar" />
+    </item>
+    <item
+        jar="C:\Users\omaro\AndroidStudioProjects\CustomSettingsForDevs\app\build\intermediates\exploded-aar\com.github.shell-software\uitools\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="841420e749b01799d17bf0a83cc6eb64dd8fa136">
+        <dex dex="C:\Users\omaro\AndroidStudioProjects\CustomSettingsForDevs\app\build\intermediates\pre-dexed\debug\classes-029e1ac29a0955346edaae21432a1782185bdefb.jar" />
+    </item>
+    <item
+        jar="C:\Users\omaro\AndroidStudioProjects\CustomSettingsForDevs\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="C:\Users\omaro\AndroidStudioProjects\CustomSettingsForDevs\app\build\intermediates\pre-dexed\debug\classes-97985d20f5e50ee939f75b868fd68292e1e2e2ed.jar" />
+    </item>
+    <item
+        jar="C:\Users\omaro\AndroidStudioProjects\CustomSettingsForDevs\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="C:\Users\omaro\AndroidStudioProjects\CustomSettingsForDevs\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-6b6919993eb4955b3c01ad65564a4ae0f87ab7b9.jar" />
+    </item>
+    <item
+        jar="C:\Users\omaro\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="C:\Users\omaro\AndroidStudioProjects\CustomSettingsForDevs\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-83b621ac87a69d3d059367b8f082668877f86995.jar" />
+    </item>
+    <item
+        jar="C:\Users\omaro\AndroidStudioProjects\CustomSettingsForDevs\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e0b0c35d02308b270015a74cada4887e2e49b889">
+        <dex dex="C:\Users\omaro\AndroidStudioProjects\CustomSettingsForDevs\app\build\intermediates\pre-dexed\debug\classes-9484d0ccdd0bc085be10830e654f431055cdac85.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/reboot_menu" android:title="Reboot" app:showAsAction="always" android:icon="@drawable/ic_reboot"/>
+</menu>
+<!-- From: file:/C:/Users/omaro/AndroidStudioProjects/CustomSettingsForDevs/app/src/main/res/menu/main_view.xml -->
