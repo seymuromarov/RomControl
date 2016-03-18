@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Launcher Mods" />
+    <PreferenceCategory android:title="Reboot phone to taking changes">
+    <SwitchPreference android:title="Wallpaper scrolling " android:key="wallpaper_scroll" android:defaultValue="true" android:summaryOn="On" android:summaryOff="Off" />
+    </PreferenceCategory>
 </PreferenceScreen>
