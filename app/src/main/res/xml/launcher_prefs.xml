@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Launcher Mods" />
     <PreferenceCategory android:title="Reboot phone to taking changes">
-    <SwitchPreference android:title="Wallpaper scrolling " android:key="wallpaper_scroll" android:defaultValue="true" android:summaryOn="On" android:summaryOff="Off" />
     </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Launcher Mods" />
+    <SwitchPreference android:title="Wallpaper scrolling " android:key="wallpaper_scroll" android:defaultValue="true" android:summaryOn="On" android:summaryOff="Off" />
     <PreferenceCategory android:layout="@layout/preferences_category" android:title="Launcher color">
         <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Icons color" android:key="launcher_icons_text_color" android:summary="Choose color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
     </PreferenceCategory>

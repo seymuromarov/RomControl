@@ -5,6 +5,10 @@
     <Preference android:title="3Minit Battery" android:summary="Minit Battery">
         <intent android:targetPackage="com.three.minit.minitbatterysettings.free" android:action="android.intent.action.MAIN" android:targetClass="com.three.minit.minitbatterysettings.MainActivity" />
     </Preference>
+    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Clock Mods" />
+    <Preference android:title="Potato clock" android:summary="Set your clock settings">
+        <intent android:targetPackage="com.potato.clock.main" android:action="android.intent.action.MAIN" android:targetClass="com.potato.clock.main.Main" />
+    </Preference>
     <PreferenceCategory android:layout="@layout/preferences_category" android:title="Internet Mods" />
     <SwitchPreference android:title="Internet speed" android:key="tweaks_speed_view" android:summaryOn="Show" android:summaryOff="Hide" />
     <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Download speed color" android:key="tweaks_speed_color_download" android:summary="Choose download speed color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
