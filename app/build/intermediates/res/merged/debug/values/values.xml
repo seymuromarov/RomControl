@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- From: file:/C:/Users/omaro/AndroidStudioProjects/CustomSettingsForDevs/app/src/main/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="FirstLineModeName">
+        <item>Cpu Text</item>
+        <item>Custom Text</item>
+        <item>Ram Text</item>
+        <item>WeekDay Text</item>
+    </string-array>
+    <string-array name="FirstLineModeValue">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
     <!-- From: file:/C:/Users/omaro/AndroidStudioProjects/CustomSettingsForDevs/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string-array name="TrafficName">
