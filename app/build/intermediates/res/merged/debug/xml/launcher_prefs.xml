@@ -7,4 +7,8 @@
     <PreferenceCategory android:layout="@layout/preferences_category" android:title="Launcher color">
         <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Icons color" android:key="launcher_icons_text_color" android:summary="Choose color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
     </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Swipe to open app" />
+    <Preference android:title="6th Gear" android:summary="Choose opened app">
+        <intent android:targetPackage="com.wubydax.geartwswipe" android:action="android.intent.action.MAIN" android:targetClass="com.wubydax.geartwswipe.ResetDialogActivity" />
+    </Preference>
 </PreferenceScreen><!-- From: file:/C:/Users/omaro/AndroidStudioProjects/CustomSettingsForDevs/app/src/main/res/xml/launcher_prefs.xml -->
