@@ -9,8 +9,17 @@
     <Preference android:title="Potato clock" android:summary="Set your clock settings">
         <intent android:targetPackage="com.potato.clock.main" android:action="android.intent.action.MAIN" android:targetClass="com.potato.clock.main.Main" />
     </Preference>
+    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Potato Gradient StatusBar" />
+    <PreferenceScreen android:title="Gradient Style Settings" android:key="com.potato.gradientapp.MainActivity" />
     <PreferenceCategory android:layout="@layout/preferences_category" android:title="Internet Mods" />
     <SwitchPreference android:title="Internet speed" android:key="tweaks_speed_view" android:summaryOn="Show" android:summaryOff="Hide" />
     <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Download speed color" android:key="tweaks_speed_color_download" android:summary="Choose download speed color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
     <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Upload speed color" android:key="tweaks_speed_color_upload" android:summary="Choose upload speed color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
+    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Immersive mode" />
+    <com.sheard.romcontrol.prefs.MyListPreference
+        android:title="Immersive Mode (Fullscreen)"
+        android:key="policy_control"
+        android:summary="%s"
+        android:entries="@array/immersive_entries"
+        android:entryValues="@array/immersive_values" />
 </PreferenceScreen><!-- From: file:/C:/Users/omaro/AndroidStudioProjects/CustomSettingsForDevs/app/src/main/res/xml/ui_prefs.xml -->
