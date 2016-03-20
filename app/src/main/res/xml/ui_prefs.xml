@@ -11,10 +11,14 @@
     </Preference>
     <PreferenceCategory android:layout="@layout/preferences_category" android:title="Potato Gradient StatusBar" />
     <PreferenceScreen android:title="Gradient Style Settings" android:key="com.potato.gradientapp.MainActivity" />
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Internet Mods" />
-    <SwitchPreference android:title="Internet speed" android:key="tweaks_speed_view" android:summaryOn="Show" android:summaryOff="Hide" />
+    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Internet Mods Left" />
+    <SwitchPreference android:title="Internet speed left side" android:key="tweaks_speed_view" android:summaryOn="Show" android:summaryOff="Hide" />
     <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Download speed color" android:key="tweaks_speed_color_download" android:summary="Choose download speed color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
     <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Upload speed color" android:key="tweaks_speed_color_upload" android:summary="Choose upload speed color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
+    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Internet Mods Right" />
+    <SwitchPreference android:title="Internet speed right side" android:key="tweaks_speed_view_right" android:summaryOn="Show" android:summaryOff="Hide" />
+    <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Download speed color" android:key="tweaks_speed_color_download_right" android:summary="Choose download speed color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
+    <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Upload speed color" android:key="tweaks_speed_color_upload_right" android:summary="Choose upload speed color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
     <PreferenceCategory android:layout="@layout/preferences_category" android:title="Immersive mode" />
     <com.sheard.romcontrol.prefs.MyListPreference
         android:title="Immersive Mode (Fullscreen)"
