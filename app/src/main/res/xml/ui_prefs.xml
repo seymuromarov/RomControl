@@ -10,7 +10,7 @@
     <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/clock_style_entries" android:title="Clock Location" android:key="statusbar_clock_style" android:summary="%s"  android:dependency="status_bar_clock" android:defaultValue="0" android:entryValues="@array/clock_style_values" />
     <SwitchPreference android:title="Seconds on clock" android:key="clock_use_second" android:dependency="status_bar_clock" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />
     <com.sheard.romcontrol.prefs.SeekBarPreference android:max="23" android:title="Clock size" android:key="statusbar_clock_font_size" android:dependency="status_bar_clock" />
-    <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Clock color" android:key="statusbar_clock_color" android:summary="Выберите цвет" android:dependency="status_bar_clock" android:defaultValue="\#ffffffff" alphaSlider="false" />
+    <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Clock color" android:key="statusbar_clock_color" android:summary="Choose color" android:dependency="status_bar_clock" android:defaultValue="\#ffffffff" alphaSlider="false" />
     <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/clock_font_style_entries" android:title="Clock Font" android:key="statusbar_clock_font_style" android:summary="%s"  android:dependency="status_bar_clock" android:defaultValue="4" android:entryValues="@array/clock_font_style_values" />
     <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/clock_date_display_entries" android:title="Date" android:key="statusbar_clock_date_display" android:summary="%s"  android:dependency="status_bar_clock" android:defaultValue="0" android:entryValues="@array/clock_date_display_values" />
     <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/clock_date_style_entries" android:title="Date Style" android:key="statusbar_clock_date_style" android:summary="%s"  android:dependency="status_bar_clock" android:defaultValue="0" android:entryValues="@array/clock_date_style_values" />
@@ -24,13 +24,12 @@
     <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Download speed color" android:key="tweaks_speed_color_download" android:summary="Choose download speed color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
     <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Upload speed color" android:key="tweaks_speed_color_upload" android:summary="Choose upload speed color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
     <PreferenceCategory android:layout="@layout/preferences_category" android:title="Left different style with speed choose" />
-    <SwitchPreference android:title="Internet speed" android:key="db_pen_hovering_fenghenztlshws_ink_effect" android:defaultValue="false" android:summaryOn="Включена" android:summaryOff="Выключена" />
+    <SwitchPreference android:title="Internet speed" android:key="db_pen_hovering_fenghenztlshws_ink_effect" android:defaultValue="false" android:summaryOn="On" android:summaryOff="Off" />
     <com.sheard.romcontrol.prefs.SeekBarPreference android:max="6000" android:title="Internet Speed Delay" android:key="db_inkeffect_fenghenztlshwssxsl_picker" android:dependency="db_pen_hovering_fenghenztlshws_ink_effect" />
     <PreferenceCategory android:layout="@layout/preferences_category" android:title="Internet Mods Right" />
     <SwitchPreference android:title="Internet speed right side" android:key="tweaks_speed_view_right" android:summaryOn="Show" android:summaryOff="Hide" />
     <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Download speed color" android:key="tweaks_speed_color_download_right" android:summary="Choose download speed color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
     <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Upload speed color" android:key="tweaks_speed_color_upload_right" android:summary="Choose upload speed color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
-
     <PreferenceCategory android:layout="@layout/preferences_category" android:title="Immersive mode" />
     <com.sheard.romcontrol.prefs.MyListPreference
         android:title="Immersive Mode (Fullscreen)"
@@ -38,4 +37,6 @@
         android:summary="%s"
         android:entries="@array/immersive_entries"
         android:entryValues="@array/immersive_values" />
+    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Lock" />
+    <SwitchPreference android:title="Double tap statusbar to lock" android:key="double_tap_sleep" android:defaultValue="true" android:summaryOn="On" android:summaryOff="Off" />
 </PreferenceScreen>
