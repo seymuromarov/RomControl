@@ -4,4 +4,7 @@
     </PreferenceCategory>
     <PreferenceCategory android:layout="@layout/preferences_category" android:title="Icons visiblity" />
     <SwitchPreference android:title="Keyboard icon on dropdown" android:key="show_ime_icon" android:summaryOn="On" android:summaryOff="Off" />
+    <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/listview_animation_entries" android:title="List view animations" android:key="listview_animation" android:summary="%s" android:defaultValue="1" android:dialogTitle="List view animations" android:entryValues="@array/listview_animation_values" />
+    <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/listview_interpolator_entries" android:title="List view interpolator" android:key="listview_interpolator" android:summary="%s" android:defaultValue="0" android:dialogTitle="List view interpolator" android:entryValues="@array/listview_interpolator_values" />
+
 </PreferenceScreen>
