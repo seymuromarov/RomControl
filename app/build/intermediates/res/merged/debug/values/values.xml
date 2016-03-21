@@ -42,6 +42,16 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+    <string-array name="clock_date_display_entries">
+        <item> Hide date</item>
+        <item>little date</item>
+        <item>big date</item>
+    </string-array>
+    <string-array name="clock_date_display_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
     <string-array name="clock_date_format_entries_values">
         <item>dd/MM/yy</item>
         <item>MM/dd/yy</item>
@@ -73,6 +83,16 @@
     <string-array name="clock_date_position_values">
         <item>0</item>
         <item>1</item>
+    </string-array>
+    <string-array name="clock_date_style_entries">
+        <item> Normal </item>
+        <item> Line </item>
+        <item> Capital </item>
+    </string-array>
+    <string-array name="clock_date_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
     </string-array>
     <string-array name="clock_font_style_entries">
         <item>Clock font normal</item>

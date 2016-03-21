@@ -414,6 +414,26 @@ Oct/16/2014"</item>
         <item>EEEE dd/MM</item>
         <item>EEEE MM/dd</item>
     </string-array>
+    <string-array name="clock_date_display_entries">
+        <item> Hide date</item>
+        <item>little date</item>
+        <item>big date</item>
+    </string-array>
+    <string-array name="clock_date_display_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="clock_date_style_entries">
+        <item> Normal </item>
+        <item> Line </item>
+        <item> Capital </item>
+    </string-array>
+    <string-array name="clock_date_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
     <string-array name="lockscreen_entries">
         <item>Clock </item>
         <item>Stone Skipping</item>

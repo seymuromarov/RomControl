@@ -1415,6 +1415,10 @@
         <item>Play/Pause</item>
         <item>Previous</item>
         <item>Stop</item>
+    </string-array><string-array name="clock_date_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
     </string-array><string-array name="volbtn_action_values">
         <item>87</item>
         <item>127</item>
@@ -1468,6 +1472,10 @@
         <item>Play/Pause</item>
         <item>Previous</item>
         <item>Stop</item>
+    </string-array><string-array name="clock_date_style_entries">
+        <item> Normal </item>
+        <item> Line </item>
+        <item> Capital </item>
     </string-array><string-array name="custom_date">
         <item>Fri, October 16 (Stock)</item>
         <item>Fri, 16 October</item>
@@ -1623,6 +1631,10 @@ Oct/16/2014"</item>
         <item>0</item>
         <item>1</item>
         <item>2</item>
+    </string-array><string-array name="clock_date_display_entries">
+        <item> Hide date</item>
+        <item>little date</item>
+        <item>big date</item>
     </string-array><string-array name="custom_date_values">
         <item>0</item>
         <item>1</item>
@@ -1651,6 +1663,10 @@ Oct/16/2014"</item>
         <item>5</item>
         <item>6</item>
         <item>7</item>
+    </string-array><string-array name="clock_date_display_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
     </string-array><string-array name="power_doubletap_entries">
         <item>Disabled</item>
         <item>Application</item>
