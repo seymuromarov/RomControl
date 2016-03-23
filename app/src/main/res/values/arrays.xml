@@ -514,6 +514,46 @@ Oct/16/2014"</item>
         <item>3</item>
         <item>4</item>
     </string-array>
+    <string-array name="keys_choose_entries">
+        <item>Stcok</item>
+        <item>Google</item>
+        <item>Kill app</item>
+        <item>ScreenShoot</item>
+        <item>Lock Screen</item>
+        <item>Menu</item>
+        <item>Your app</item>
+    </string-array>
+    <string-array name="keys_choose_values">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>8</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="toggle_style_entries">
+        <item>100ms</item>
+        <item>150ms</item>
+        <item>200ms</item>
+        <item>250ms(default)</item>
+        <item>300ms</item>
+        <item>350ms</item>
+        <item>400ms</item>
+        <item>450ms</item>
+        <item>500ms</item>
+    </string-array>
+    <string-array name="toggle_style_values">
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>350</item>
+        <item>400</item>
+        <item>450</item>
+        <item>500</item>
+    </string-array>
 </resources>
 
 

@@ -6,5 +6,25 @@
     <SwitchPreference android:title="Keyboard icon on dropdown" android:key="show_ime_icon" android:summaryOn="On" android:summaryOff="Off" />
     <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/listview_animation_entries" android:title="List view animations" android:key="listview_animation" android:summary="%s" android:defaultValue="1" android:dialogTitle="List view animations" android:entryValues="@array/listview_animation_values" />
     <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/listview_interpolator_entries" android:title="List view interpolator" android:key="listview_interpolator" android:summary="%s" android:defaultValue="0" android:dialogTitle="List view interpolator" android:entryValues="@array/listview_interpolator_values" />
-
+    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Music controls" />
+    <CheckBoxPreference android:title="Music control" android:key="volbtn_music_controls" android:defaultValue="false" android:summaryOn="On" android:summaryOff="Off" />
+    <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/toggle_style_entries" android:title="Long press delay" android:key="volbtn_timeout" android:summary="%s"  android:dependency="volbtn_music_controls" android:defaultValue="250" android:entryValues="@array/toggle_style_values" />
+    <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/volbtn_action_entries" android:title="Volume up long press" android:key="volbtn_vol_up" android:summary="%s"  android:dependency="volbtn_music_controls" android:defaultValue="87" android:entryValues="@array/volbtn_action_values" />
+    <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/volbtn_action_entries" android:title="Volume down long press" android:key="volbtn_vol_down" android:summary="%s"  android:dependency="volbtn_music_controls" android:defaultValue="88" android:entryValues="@array/volbtn_action_values" />
+    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Buttons controls" />
+    <PreferenceScreen android:title="Menu key">
+        <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/keys_choose_entries" android:title="Долгое нажатие на клавишу Меню" android:key="long_press_menu" android:summary="%s"  android:defaultValue="0" android:entryValues="@array/keys_choose_values" />
+        <com.sheard.romcontrol.prefs.IntentDialogPreference  android:title="Your app for menu key" android:key="menu_custom_app" android:summary="choose something" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="Back key">
+        <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/keys_choose_entries" android:title="Долгое нажатие на клавишу Назад" android:key="long_press_back" android:summary="%s"  android:defaultValue="0" android:entryValues="@array/keys_choose_values" />
+        <com.sheard.romcontrol.prefs.IntentDialogPreference  android:title="Your app for back key" android:key="back_custom_app" android:summary="choose something" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="Home button">
+        <CheckBoxPreference android:title="Wake up home" android:key="wake_home" android:defaultValue="true" android:summaryOn="On" android:summaryOff="Off" />
+        <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/keys_choose_entries" android:title="Home long press" android:key="long_press_home" android:summary="%s"  android:defaultValue="0" android:entryValues="@array/keys_choose_values" />
+        <com.sheard.romcontrol.prefs.IntentDialogPreference  android:title="Your app for home button" android:key="home_custom_app" android:summary="choose something" />
+        <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/keys_choose_entries" android:title="Double tap home" android:key="double_press_home" android:summary="%s"  android:defaultValue="0" android:entryValues="@array/keys_choose_values" />
+        <com.sheard.romcontrol.prefs.IntentDialogPreference  android:title="Your app for home button" android:key="double_custom_app" android:summary="choose something" />
+    </PreferenceScreen>
 </PreferenceScreen><!-- From: file:/C:/Users/omaro/AndroidStudioProjects/CustomSettingsForDevs/app/src/main/res/xml/frameworks_general_prefs.xml -->

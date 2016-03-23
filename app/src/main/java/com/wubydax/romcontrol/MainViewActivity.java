@@ -96,9 +96,9 @@ public class MainViewActivity extends AppCompatActivity
         String[] mTitles = getResources().getStringArray(R.array.nav_drawer_items);
         int[] mIcons = {R.drawable.ic_ui_mods,
 				R.drawable.ic_launcher,
-                R.drawable.ic_phone_mods,
                 R.drawable.ic_general_framework,
                 R.drawable.ic_apps,
+				R.drawable.ic_phone_mods,
                 R.drawable.ic_settings};
         for (int i = 0; i < mTitles.length && i < mIcons.length; i++) {
             com.sheard.romcontrol.NavItem current = new com.sheard.romcontrol.NavItem();
@@ -123,14 +123,14 @@ public class MainViewActivity extends AppCompatActivity
             case 1:
                 getFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.container, new LauncherFragment()).commitAllowingStateLoss();
                 break;
-			case 2:
-                getFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.container, new PhonePrefsFragment()).commitAllowingStateLoss();
-                break;
-            case 3:
+            case 2:
                 getFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.container, new FrameworksGeneralFragment()).commitAllowingStateLoss();
                 break;
-            case 4:
+            case 3:
                 getFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.container, new AppLinksFragment()).commitAllowingStateLoss();
+                break;
+			case 4:
+                getFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.container, new PhonePrefsFragment()).commitAllowingStateLoss();
                 break;
             case 5:
                 showThemeChooserDialog();

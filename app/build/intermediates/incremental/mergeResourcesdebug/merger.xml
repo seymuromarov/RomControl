@@ -1503,6 +1503,16 @@ Oct/16/2014"</item>
         <item>10/16/14</item>
         <item>"Thursday
 10/16/14"</item>
+    </string-array><string-array name="toggle_style_entries">
+        <item>100ms</item>
+        <item>150ms</item>
+        <item>200ms</item>
+        <item>250ms(default)</item>
+        <item>300ms</item>
+        <item>350ms</item>
+        <item>400ms</item>
+        <item>450ms</item>
+        <item>500ms</item>
     </string-array><string-array name="clock_weekday_values">
         <item>0</item>
         <item>1</item>
@@ -1545,6 +1555,14 @@ Oct/16/2014"</item>
         <item>8</item>
         <item>4</item>
         <item>9</item>
+    </string-array><string-array name="keys_choose_values">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>8</item>
+        <item>2</item>
     </string-array><string-array name="FirstLineModeValue">
         <item>1</item>
         <item>2</item>
@@ -1692,6 +1710,16 @@ Oct/16/2014"</item>
     </string-array><string-array name="lockscreen_entries">
         <item>Clock </item>
         <item>Stone Skipping</item>
+    </string-array><string-array name="toggle_style_values">
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>350</item>
+        <item>400</item>
+        <item>450</item>
+        <item>500</item>
     </string-array><string-array name="clock_font_style_entries">
         <item>Clock font normal</item>
         <item>Clock font italic</item>
@@ -1769,6 +1797,14 @@ Oct/16/2014"</item>
         <item>Google Now</item>
         <item>Voice Command (Stock)</item>
         <item>Lock Phone</item>
+    </string-array><string-array name="keys_choose_entries">
+        <item>Stcok</item>
+        <item>Google</item>
+        <item>Kill app</item>
+        <item>ScreenShoot</item>
+        <item>Lock Screen</item>
+        <item>Menu</item>
+        <item>Your app</item>
     </string-array><string-array name="listview_interpolator_entries">
         <item>@string/listview_off</item>
         <item>@string/listview_accelerate_interpolator</item>
@@ -1785,9 +1821,9 @@ Oct/16/2014"</item>
     </declare-styleable><attr format="reference" name="nav_drawer_header"/><attr format="color" name="nav_drawer_bg_color"/></file><file path="C:\Users\omaro\AndroidStudioProjects\CustomSettingsForDevs\app\src\main\res\values\colors.xml" qualifiers=""><color name="myDrawerBackground">#FFF</color><color name="myPrimaryColor">#2e4d50</color><color name="myAccentColor">#FF5722</color><color name="myNavigationColor">#000</color><drawable name="pressed_gray">#0c2e4d50</drawable><color name="myPrimaryDarkColor">#1c3c3f</color><color name="myPrimaryDarkColorLight">#512DA8</color><color name="windowBgTransparent">#00000000</color><color name="myInverseColor">#ff1a292c</color><color name="myWindowBackground">#FFF</color><color name="myInverseColorLight">#fff</color><color name="myTextPrimaryColor">#fff</color><color name="myTextPrimaryColorLight">#000</color><color name="myPrimaryColorLight">#673AB7</color><color name="myAccentColorLight">#4CAF50</color><drawable name="selected_gray">?colorPrimary</drawable></file><file path="C:\Users\omaro\AndroidStudioProjects\CustomSettingsForDevs\app\src\main\res\values\dimens.xml" qualifiers=""><dimen name="toolbar_elevation">4dp</dimen><dimen name="activity_vertical_margin">16dp</dimen><dimen name="dialog_listView_bottom_padding">16dp</dimen><dimen name="button_size">30dp</dimen><dimen name="activity_horizontal_margin">16dp</dimen><dimen name="navigation_drawer_width">320dp</dimen><dimen name="dialog_listView_top_padding">12dp</dimen><dimen name="bitmap_size">31dp</dimen></file><file path="C:\Users\omaro\AndroidStudioProjects\CustomSettingsForDevs\app\src\main\res\values\public.xml" qualifiers=""><public id="0x7f080037" name="wifi_values" type="array"/><public id="0x7f080036" name="wifi_icons" type="array"/></file><file path="C:\Users\omaro\AndroidStudioProjects\CustomSettingsForDevs\app\src\main\res\values\strings.xml" qualifiers=""><string name="missing_su_title">Could not get root access</string><string name="lockscreen_alarm_text_color_title">Lockscreen alarm text color</string><string name="lockscreen_sunset_text_color_title">Lockscreen sunset text color</string><string name="long_press_right_assignment">Long press assignment</string><string name="long_press_home_application">Long press application</string><string name="lockscreen_weather_text_color_summary">Change lockscreen weather text color</string><string name="listview_wave_left">Wave (left)</string><string name="listview_unfold">Unfold</string><string-array name="nav_drawer_items">
         <item>SystemUI Mods</item>
         <item>Launcher</item>
-        <item>Phone Mods</item>
         <item>Framework and General</item>
         <item>Useful Apps</item>
+        <item>Phone Mods</item>
         <item>Set Theme</item>
     </string-array><string name="long_press_home">Long press home</string><string name="listview_off">Off</string><string name="listview_bounce_interpolator">Bounce</string><string name="gaining_root">Acquiring root access. Please wait...</string><string name="lockscreen_barometer_text_color_title">Lockscreen barometer text color</string><string name="exit">Exit App</string><string-array name="traffic_style_values">
         <item>0</item>

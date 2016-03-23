@@ -6,9 +6,9 @@
     <string-array name="nav_drawer_items">
         <item>SystemUI Mods</item>
         <item>Launcher</item>
-        <item>Phone Mods</item>
         <item>Framework and General</item>
         <item>Useful Apps</item>
+        <item>Phone Mods</item>
         <item>Set Theme</item>
     </string-array>
     <string-array name="clock_position_entries">
