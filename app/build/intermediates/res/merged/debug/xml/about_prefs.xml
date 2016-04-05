@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:layout="@layout/my_logo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:selectable="false" />
+    <PreferenceCategory android:layout="@layout/sub_category" android:title="About" />
+    <PreferenceScreen android:icon="@drawable/xda" android:title="Ultron Rom (N920*)" android:summary="Rom by Sheard">
+        <intent android:action="android.intent.action.VIEW" android:data="" />
+    </PreferenceScreen>
+    <PreferenceCategory android:layout="@layout/sub_category" android:title="Rom Version:" />
+    <PreferenceCategory android:title="Ultron V2 First Blood " />
+
+    <PreferenceCategory android:layout="@layout/sub_category" android:title="Latest Changelog:" />
+    <PreferenceCategory android:title="Will be added everything after this release :) " />
+    <PreferenceCategory android:layout="@layout/sub_category" android:title="Credits and thanks:" />
+    <PreferenceCategory android:title="will add them here " />
+    <PreferenceCategory android:title="" />
+    <PreferenceCategory
+    android:layout="@layout/sub_category"
+        android:title="▒▒▒▒▒▒▒▒▒▒▒▒
+         ▒▒▒▒▓▒▒▓▒▒▒▒
+         ▒▒▒▒▓▒▒▓▒▒▒▒
+         ▒▒▒▒▒▒▒▒▒▒▒▒
+         ▒▓▒▒▒▒▒▒▒▒▓▒
+         ▒▒▓▓▓▓▓▓▓▓▒▒
+         ▒▒▒▒▒▒▒▒▒▒▒▒" />
+</PreferenceScreen><!-- From: file:/C:/Users/omaro/AndroidStudioProjects/CustomSettingsForDevs/app/src/main/res/xml/about_prefs.xml -->

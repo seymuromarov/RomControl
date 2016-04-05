@@ -1,30 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="Reboot phone to taking changes">
-    </PreferenceCategory>
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Icons visiblity" />
-    <SwitchPreference android:title="Keyboard icon on dropdown" android:key="show_ime_icon" android:summaryOn="On" android:summaryOff="Off" />
-    <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/listview_animation_entries" android:title="List view animations" android:key="listview_animation" android:summary="%s" android:defaultValue="1" android:dialogTitle="List view animations" android:entryValues="@array/listview_animation_values" />
-    <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/listview_interpolator_entries" android:title="List view interpolator" android:key="listview_interpolator" android:summary="%s" android:defaultValue="0" android:dialogTitle="List view interpolator" android:entryValues="@array/listview_interpolator_values" />
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Music controls" />
-    <CheckBoxPreference android:title="Music control" android:key="volbtn_music_controls" android:defaultValue="false" android:summaryOn="On" android:summaryOff="Off" />
-    <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/toggle_style_entries" android:title="Long press delay" android:key="volbtn_timeout" android:summary="%s"  android:dependency="volbtn_music_controls" android:defaultValue="250" android:entryValues="@array/toggle_style_values" />
-    <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/volbtn_action_entries" android:title="Volume up long press" android:key="volbtn_vol_up" android:summary="%s"  android:dependency="volbtn_music_controls" android:defaultValue="87" android:entryValues="@array/volbtn_action_values" />
-    <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/volbtn_action_entries" android:title="Volume down long press" android:key="volbtn_vol_down" android:summary="%s"  android:dependency="volbtn_music_controls" android:defaultValue="88" android:entryValues="@array/volbtn_action_values" />
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Buttons controls" />
-    <PreferenceScreen android:title="Menu key">
-        <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/keys_choose_entries" android:title="Долгое нажатие на клавишу Меню" android:key="long_press_menu" android:summary="%s"  android:defaultValue="0" android:entryValues="@array/keys_choose_values" />
-        <com.sheard.romcontrol.prefs.IntentDialogPreference  android:title="Your app for menu key" android:key="menu_custom_app" android:summary="choose something" />
+    <PreferenceCategory android:title="Reboot phone to taking changes"></PreferenceCategory>
+    <PreferenceCategory
+        android:layout="@layout/preferences_category"
+        android:title="Some necessary toggles ✔" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Usb Wake Screen ☹" />
+    <SwitchPreference
+        android:key="usb_plugged"
+        android:summaryOff="Off"
+        android:summaryOn="On"
+        android:title="USB Plug/Unplug Wake Screen" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Show dropdown keyboard ⌨" />
+    <SwitchPreference
+        android:key="show_ime_icon"
+        android:summaryOff="Off"
+        android:summaryOn="On"
+        android:title="Keyboard icon on dropdown" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Show low battery notification  🔋" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="low_battery_popup_on"
+        android:summaryOff="Off"
+        android:summaryOn="On"
+        android:title="Low battery notification" />
+    <PreferenceCategory
+        android:layout="@layout/preferences_category"
+        android:title="List view settings ✒ " />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Animations ☢" />
+    <com.sheard.romcontrol.prefs.MyListPreference
+        android:defaultValue="4"
+        android:dialogTitle="List view animations"
+        android:entries="@array/listview_animation_entries"
+        android:entryValues="@array/listview_animation_values"
+        android:key="listview_animation"
+        android:summary="%s"
+        android:title="List View Animations" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Interpolator ☣" />
+    <com.sheard.romcontrol.prefs.MyListPreference
+        android:defaultValue="0"
+        android:dialogTitle="List view interpolator"
+        android:entries="@array/listview_interpolator_entries"
+        android:entryValues="@array/listview_interpolator_values"
+        android:key="listview_interpolator"
+        android:summary="%s"
+        android:title="List view interpolator" />
+    <PreferenceCategory
+        android:title="Show/Hide LockScreen Elements" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="set_shortcuts_mode"
+        android:summaryOff="Off"
+        android:summaryOn="On"
+        android:title="Shortcuts in Lockscreen" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Experimental features" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="show_equalizer"
+        android:summary="Enable Notification Panel Music Visualizer."
+        android:title="Music Visualizer" />
+    <com.sheard.romcontrol.prefs.MyListPreference
+        android:dependency="show_equalizer"
+        android:defaultValue="0"
+        android:dialogTitle="Select Visualizer"
+        android:entries="@array/visualizer_style_entries"
+        android:entryValues="@array/visualizer_style_values"
+        android:key="equalizer_visualizer_style"
+        android:summary="%s"
+        android:title="Choose Visualizer Style" />
+    <PreferenceScreen android:title="Og battery" android:summary="Change battery icon and charging animation">
+        <intent android:targetPackage="com.ghareeb.battery" android:action="android.intent.action.MAIN" android:targetClass="com.ghareeb.battery.Settings" />
     </PreferenceScreen>
-    <PreferenceScreen android:title="Back key">
-        <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/keys_choose_entries" android:title="Долгое нажатие на клавишу Назад" android:key="long_press_back" android:summary="%s"  android:defaultValue="0" android:entryValues="@array/keys_choose_values" />
-        <com.sheard.romcontrol.prefs.IntentDialogPreference  android:title="Your app for back key" android:key="back_custom_app" android:summary="choose something" />
-    </PreferenceScreen>
-    <PreferenceScreen android:title="Home button">
-        <CheckBoxPreference android:title="Wake up home" android:key="wake_home" android:defaultValue="true" android:summaryOn="On" android:summaryOff="Off" />
-        <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/keys_choose_entries" android:title="Home long press" android:key="long_press_home" android:summary="%s"  android:defaultValue="0" android:entryValues="@array/keys_choose_values" />
-        <com.sheard.romcontrol.prefs.IntentDialogPreference  android:title="Your app for home button" android:key="home_custom_app" android:summary="choose something" />
-        <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/keys_choose_entries" android:title="Double tap home" android:key="double_press_home" android:summary="%s"  android:defaultValue="0" android:entryValues="@array/keys_choose_values" />
-        <com.sheard.romcontrol.prefs.IntentDialogPreference  android:title="Your app for home button" android:key="double_custom_app" android:summary="choose something" />
-    </PreferenceScreen>
+    <SwitchPreference android:title="Show memCleanView" android:key="pekaka_memCleanView" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Memkiller color" android:key="db_inkeffect_pekaka_memkiller_picker" android:defaultValue="\#ff2aff00" alphaSlider="true" hexValue="true" />
 </PreferenceScreen>

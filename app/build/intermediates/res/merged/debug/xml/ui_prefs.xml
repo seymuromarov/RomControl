@@ -1,42 +1,349 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Battery Mods" />
-    <Preference android:title="3Minit Battery" android:summary="Minit Battery">
-        <intent android:targetPackage="com.three.minit.minitbatterysettings.free" android:action="android.intent.action.MAIN" android:targetClass="com.three.minit.minitbatterysettings.MainActivity" />
+    <PreferenceCategory
+        android:layout="@layout/preferences_category"
+        android:title="Battery 🔋 Gradient" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Battery Mods" />
+    <Preference
+        android:summary="Minit Battery"
+        android:title="3Minit Battery">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.three.minit.minitbatterysettings.MainActivity"
+            android:targetPackage="com.three.minit.minitbatterysettings.free" />
     </Preference>
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Clock Mods" />
-    <CheckBoxPreference android:title="Show clock" android:key="status_bar_clock" android:defaultValue="true" android:summaryOn="Show" android:summaryOff="Hide" />
-    <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/clock_style_entries" android:title="Clock Location" android:key="statusbar_clock_style" android:summary="%s"  android:dependency="status_bar_clock" android:defaultValue="0" android:entryValues="@array/clock_style_values" />
-    <SwitchPreference android:title="Seconds on clock" android:key="clock_use_second" android:dependency="status_bar_clock" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />
-    <com.sheard.romcontrol.prefs.SeekBarPreference android:max="23" android:title="Clock size" android:key="statusbar_clock_font_size" android:dependency="status_bar_clock" />
-    <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Clock color" android:key="statusbar_clock_color" android:summary="Choose color" android:dependency="status_bar_clock" android:defaultValue="\#ffffffff" alphaSlider="false" />
-    <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/clock_font_style_entries" android:title="Clock Font" android:key="statusbar_clock_font_style" android:summary="%s"  android:dependency="status_bar_clock" android:defaultValue="4" android:entryValues="@array/clock_font_style_values" />
-    <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/clock_date_display_entries" android:title="Date" android:key="statusbar_clock_date_display" android:summary="%s"  android:dependency="status_bar_clock" android:defaultValue="0" android:entryValues="@array/clock_date_display_values" />
-    <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/clock_date_style_entries" android:title="Date Style" android:key="statusbar_clock_date_style" android:summary="%s"  android:dependency="status_bar_clock" android:defaultValue="0" android:entryValues="@array/clock_date_style_values" />
-    <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/clock_date_position_entries" android:title="Date location" android:key="statusbar_clock_date_position" android:summary="%s"  android:dependency="status_bar_clock" android:entryValues="@array/clock_date_position_values" />
-    <com.sheard.romcontrol.prefs.MyListPreference android:entries="@array/clock_date_format_entries_values" android:title="Date format" android:key="statusbar_clock_date_format" android:summary="%s"  android:dependency="status_bar_clock" android:entryValues="@array/clock_date_format_entries_values" />
-    <com.sheard.romcontrol.prefs.MyEditTextPreference android:title="Your clock format" android:key="statusbar_clock_date_format" android:summary="write your date format" android:dependency="status_bar_clock" android:dialogTitle="Write date example EEE" />
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Potato Gradient StatusBar" />
-    <PreferenceScreen android:title="Gradient Style Settings" android:key="com.potato.gradientapp.MainActivity" />
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Internet Mods Left" />
-    <SwitchPreference android:title="Internet speed left side" android:key="tweaks_speed_view" android:summaryOn="Show" android:summaryOff="Hide" />
-    <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Download speed color" android:key="tweaks_speed_color_download" android:summary="Choose download speed color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
-    <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Upload speed color" android:key="tweaks_speed_color_upload" android:summary="Choose upload speed color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Left different style with speed choose" />
-    <SwitchPreference android:title="Internet speed" android:key="db_pen_hovering_fenghenztlshws_ink_effect" android:defaultValue="false" android:summaryOn="On" android:summaryOff="Off" />
-    <com.sheard.romcontrol.prefs.SeekBarPreference android:max="6000" android:title="Internet Speed Delay" android:key="db_inkeffect_fenghenztlshwssxsl_picker" android:dependency="db_pen_hovering_fenghenztlshws_ink_effect" />
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Internet Mods Right" />
-    <SwitchPreference android:title="Internet speed right side" android:key="tweaks_speed_view_right" android:summaryOn="Show" android:summaryOff="Hide" />
-    <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Download speed color" android:key="tweaks_speed_color_download_right" android:summary="Choose download speed color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
-    <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Upload speed color" android:key="tweaks_speed_color_upload_right" android:summary="Choose upload speed color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Immersive mode" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Potato Gradient StatusBar" />
+    <PreferenceScreen
+        android:key="com.potato.gradientapp.MainActivity"
+        android:title="Gradient Style Settings" />
+    <PreferenceCategory
+        android:layout="@layout/preferences_category"
+        android:title="Clock ⌚" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Show " />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="status_bar_clock"
+        android:summaryOff="Hide"
+        android:summaryOn="Show"
+        android:title="Show clock" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:dependency="status_bar_clock"
+        android:key="clock_use_second"
+        android:summaryOff="Hide"
+        android:summaryOn="Show"
+        android:title="Seconds on clock" />
     <com.sheard.romcontrol.prefs.MyListPreference
-        android:title="Immersive Mode (Fullscreen)"
+        android:defaultValue="0"
+        android:dependency="status_bar_clock"
+        android:entries="@array/clock_date_display_entries"
+        android:entryValues="@array/clock_date_display_values"
+        android:key="statusbar_clock_date_display"
+        android:summary="%s"
+        android:title="Date" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Location " />
+    <com.sheard.romcontrol.prefs.MyListPreference
+        android:defaultValue="0"
+        android:dependency="status_bar_clock"
+        android:entries="@array/clock_style_entries"
+        android:entryValues="@array/clock_style_values"
+        android:key="statusbar_clock_style"
+        android:summary="%s"
+        android:title="Clock Location" />
+    <com.sheard.romcontrol.prefs.MyListPreference
+        android:dependency="status_bar_clock"
+        android:entries="@array/clock_date_position_entries"
+        android:entryValues="@array/clock_date_position_values"
+        android:key="statusbar_clock_date_position"
+        android:summary="%s"
+        android:title="Date location" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Style ✪ Format " />
+    <com.sheard.romcontrol.prefs.MyListPreference
+        android:defaultValue="0"
+        android:dependency="status_bar_clock"
+        android:entries="@array/clock_date_style_entries"
+        android:entryValues="@array/clock_date_style_values"
+        android:key="statusbar_clock_date_style"
+        android:summary="%s"
+        android:title="Date Style" />
+    <com.sheard.romcontrol.prefs.SeekBarPreference
+        android:dependency="status_bar_clock"
+        android:key="statusbar_clock_font_size"
+        android:max="23"
+        android:title="Clock size" />
+    <com.sheard.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        android:defaultValue="\#ffffffff"
+        android:dependency="status_bar_clock"
+        android:key="statusbar_clock_color"
+        android:summary="Choose color"
+        android:title="Clock color" />
+    <com.sheard.romcontrol.prefs.MyListPreference
+        android:defaultValue="4"
+        android:dependency="status_bar_clock"
+        android:entries="@array/clock_font_style_entries"
+        android:entryValues="@array/clock_font_style_values"
+        android:key="statusbar_clock_font_style"
+        android:summary="%s"
+        android:title="Clock Font" />
+    <com.sheard.romcontrol.prefs.MyEditTextPreference
+        android:dependency="status_bar_clock"
+        android:dialogTitle="Write date example EEE"
+        android:key="statusbar_clock_date_format"
+        android:summary="write your date format"
+        android:title="Your date format" />
+    <com.sheard.romcontrol.prefs.MyListPreference
+        android:dependency="status_bar_clock"
+        android:entries="@array/clock_date_format_entries_values"
+        android:entryValues="@array/clock_date_format_entries_values"
+        android:key="statusbar_clock_date_format"
+        android:summary="%s"
+        android:title="Date format" />
+    <PreferenceCategory
+        android:layout="@layout/preferences_category"
+        android:title="Recent Ram bar " />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Ram Bar Colors " />
+    <com.sheard.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="\#ffffffff"
+        android:key="ram_color1"
+        android:title="Free ram color" />
+    <com.sheard.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="\#ffffffff"
+        android:key="ram_color2"
+        android:title="Used ram color" />
+    <PreferenceCategory
+        android:layout="@layout/preferences_category"
+        android:title="Device info" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Device info colors" />
+    <PreferenceCategory android:title="If u don't like device info for disabling it" />
+    <PreferenceCategory android:title="Set color to the transparent..." />
+    <com.sheard.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        android:key="device_info_color"
+        android:summary="Choose color"
+        android:title="Device Info Header Color" />
+    <com.sheard.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        android:key="device_info_color2"
+        android:summary="Choose color"
+        android:title="Device Info Info Color" />
+    <PreferenceCategory
+        android:layout="@layout/preferences_category"
+        android:title="Custom text or Cpu speed " />
+    <PreferenceCategory android:title="Don't choose both of text and cpu. " />
+    <PreferenceCategory android:title="Choose one of them... " />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Custom Text Show? " />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="CustomTxt_toggle"
+        android:summaryOff="@string/summaryOff"
+        android:summaryOn="@string/summaryOn"
+        android:title="Custom text" />
+    <com.sheard.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="-13542266"
+        android:dependency="CustomTxt_toggle"
+        android:key="CustomTxt_color"
+        android:summary="Choose color"
+        android:title="Change custom text color" />
+    <com.sheard.romcontrol.prefs.MyEditTextPreference
+        android:defaultValue="Ultron"
+        android:dependency="CustomTxt_toggle"
+        android:dialogTitle="Edit text"
+        android:key="CustomTxt_text"
+        android:summary="Edit text"
+        android:title="Change custom text" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Cpu Speed Show? " />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="CPUSPYENABLE"
+        android:summaryOff="Hide"
+        android:summaryOn="Show"
+        android:title="Show Cpu Speed" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:dependency="CPUSPYENABLE"
+        android:key="CPUSPYGOVERNOR"
+        android:summaryOff="Hide"
+        android:summaryOn="Show"
+        android:title="Show governor" />
+    <PreferenceCategory
+        android:layout="@layout/preferences_category"
+        android:title="Traffic meter Mods 📲" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Cool Mode" />
+    <PreferenceCategory android:title="@string/sb_traffic_title" />
+    <com.sheard.romcontrol.prefs.MyListPreference
+        android:defaultValue="0"
+        android:entries="@array/sb_traffic_entries"
+        android:entryValues="@array/sb_traffic_values"
+        android:key="status_bar_traffic_position"
+        android:title="@string/sb_traffic_align_title" />
+    <com.sheard.romcontrol.prefs.MyListPreference
+        android:defaultValue="1"
+        android:entries="@array/sb_traffic_line_entries"
+        android:entryValues="@array/sb_traffic_line_values"
+        android:key="status_bar_traffic_line"
+        android:title="@string/sb_traffic_line_title" />
+    <com.sheard.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        android:defaultValue="\#ffffffff"
+        android:key="status_bar_traffic_color"
+        android:title="@string/sb_traffic_color_title" />
+    <com.sheard.romcontrol.prefs.MyListPreference
+        android:defaultValue="0"
+        android:entries="@array/sb_traffic_font_style_entries"
+        android:entryValues="@array/traffic_font_style_values"
+        android:key="status_bar_traffic_font"
+        android:title="@string/sb_traffic_font_title" />
+    <com.sheard.romcontrol.prefs.SeekBarPreference
+        min="5"
+        unitsRight="dp"
+        android:defaultValue="16"
+        android:icon="@null"
+        android:key="status_bar_traffic_size"
+        android:max="23"
+        android:title="@string/sb_traffic_size_title" />
+    <PreferenceCategory android:title="@string/sb_traffic_adv_custom_title" />
+    <com.sheard.romcontrol.prefs.SeekBarPreference
+        min="0"
+        unitsRight=""
+        android:defaultValue="1"
+        android:icon="@null"
+        android:key="status_bar_traffic_shadow_r"
+        android:max="10"
+        android:title="@string/sb_traffic_shadow_r_title" />
+    <com.sheard.romcontrol.prefs.SeekBarPreference
+        min="-5"
+        unitsRight=""
+        android:defaultValue="0"
+        android:icon="@null"
+        android:key="status_bar_traffic_shadow_x"
+        android:max="5"
+        android:title="@string/sb_traffic_shadow_x_title" />
+    <com.sheard.romcontrol.prefs.SeekBarPreference
+        min="-5"
+        unitsRight=""
+        android:defaultValue="0"
+        android:icon="@null"
+        android:key="status_bar_traffic_shadow_y"
+        android:max="5"
+        android:title="@string/sb_traffic_shadow_y_title" />
+    <com.sheard.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        android:defaultValue="\#89000000"
+        android:key="status_bar_traffic_shadow_c"
+        android:title="@string/sb_traffic_shadow_c_title" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Left Speed meter " />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="tweaks_speed_view"
+        android:summaryOff="Hide"
+        android:summaryOn="Show"
+        android:title="Internet speed left side" />
+    <com.sheard.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="\#ffffffff"
+        android:key="tweaks_speed_color_download"
+        android:summary="Choose download speed color"
+        android:title="Download speed color" />
+    <com.sheard.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="\#ffffffff"
+        android:key="tweaks_speed_color_upload"
+        android:summary="Choose upload speed color"
+        android:title="Upload speed color" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Left Other Style " />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="db_pen_hovering_fenghenztlshws_ink_effect"
+        android:summaryOff="Off"
+        android:summaryOn="On"
+        android:title="Internet speed" />
+    <com.sheard.romcontrol.prefs.SeekBarPreference
+        android:defaultValue="500"
+        android:dependency="db_pen_hovering_fenghenztlshws_ink_effect"
+        android:key="db_inkeffect_fenghenztlshwssxsl_picker"
+        android:max="6000"
+        android:title="Internet Speed Delay" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Right Speed meter " />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="tweaks_speed_view_right"
+        android:summaryOff="Hide"
+        android:summaryOn="Show"
+        android:title="Internet speed right side" />
+    <com.sheard.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="\#ffffffff"
+        android:key="tweaks_speed_color_download_right"
+        android:summary="Choose download speed color"
+        android:title="Download speed color" />
+    <com.sheard.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="\#ffffffff"
+        android:key="tweaks_speed_color_upload_right"
+        android:summary="Choose upload speed color"
+        android:title="Upload speed color" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Right Other Style " />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="double_meter_right"
+        android:summaryOff="Off"
+        android:summaryOn="On"
+        android:title="Internet speed" />
+    <com.sheard.romcontrol.prefs.SeekBarPreference
+        android:defaultValue="500"
+        android:dependency="double_meter_right"
+        android:key="double_meter_right_delay"
+        android:max="6000"
+        android:title="Internet Speed Delay" />
+    <PreferenceCategory
+        android:layout="@layout/preferences_category"
+        android:title="Misc Modes" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Show ✪ Hide Statusbar " />
+    <com.sheard.romcontrol.prefs.MyListPreference
+        android:entries="@array/immersive_entries"
+        android:entryValues="@array/immersive_values"
         android:key="policy_control"
         android:summary="%s"
-        android:entries="@array/immersive_entries"
-        android:entryValues="@array/immersive_values" />
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Lock" />
-    <SwitchPreference android:title="Double tap statusbar to lock" android:key="double_tap_sleep" android:defaultValue="true" android:summaryOn="On" android:summaryOff="Off" />
+        android:title="Immersive Mode (Fullscreen)" />
 </PreferenceScreen><!-- From: file:/C:/Users/omaro/AndroidStudioProjects/CustomSettingsForDevs/app/src/main/res/xml/ui_prefs.xml -->

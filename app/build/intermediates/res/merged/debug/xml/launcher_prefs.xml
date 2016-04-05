@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="Reboot phone to taking changes">
+    <PreferenceCategory
+        android:layout="@layout/preferences_category"
+        android:title="Launcher Mods ✢" />
+    <PreferenceCategory android:title="Reboot phone to taking changes"></PreferenceCategory>
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Launcher toggles">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="wallpaper_scroll"
+            android:summaryOff="Off"
+            android:summaryOn="On"
+            android:title="Wallpaper scrolling " />
     </PreferenceCategory>
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Launcher Mods" />
-    <SwitchPreference android:title="Wallpaper scrolling " android:key="wallpaper_scroll" android:defaultValue="true" android:summaryOn="On" android:summaryOff="Off" />
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Launcher color">
-        <com.sheard.romcontrol.prefs.ColorPickerPreference android:title="Icons color" android:key="launcher_icons_text_color" android:summary="Choose color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Launcher color">
+        <com.sheard.romcontrol.prefs.ColorPickerPreference
+            alphaSlider="true"
+            hexValue="true"
+            android:defaultValue="\#ffffffff"
+            android:key="launcher_icons_text_color"
+            android:summary="Choose color"
+            android:title="Icons color" />
     </PreferenceCategory>
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Swipe to open app" />
-    <Preference android:title="6th Gear" android:summary="Choose opened app">
-        <intent android:targetPackage="com.wubydax.geartwswipe" android:action="android.intent.action.MAIN" android:targetClass="com.wubydax.geartwswipe.ResetDialogActivity" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Swipe to open app" />
+    <Preference
+        android:summary="Choose opened app"
+        android:title="6th Gear Swipe">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.wubydax.geartwswipe.ResetDialogActivity"
+            android:targetPackage="com.wubydax.geartwswipe" />
     </Preference>
-
 </PreferenceScreen><!-- From: file:/C:/Users/omaro/AndroidStudioProjects/CustomSettingsForDevs/app/src/main/res/xml/launcher_prefs.xml -->

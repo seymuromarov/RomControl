@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:layout="@layout/preferences_category"
+        android:title="Buttons controls ✇" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Menu key" />
+    <com.sheard.romcontrol.prefs.MyListPreference
+        android:defaultValue="0"
+        android:entries="@array/keys_choose_entries"
+        android:entryValues="@array/keys_choose_values"
+        android:key="long_press_menu"
+        android:summary="%s"
+        android:title="Long press menu key" />
+    <com.sheard.romcontrol.prefs.IntentDialogPreference
+        includeSearch="true"
+        setSeparatorString="\##"
+        android:key="menu_custom_app"
+        android:title="Choose Custom App" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Back key" />
+    <com.sheard.romcontrol.prefs.MyListPreference
+        android:defaultValue="0"
+        android:entries="@array/keys_choose_entries"
+        android:entryValues="@array/keys_choose_values"
+        android:key="long_press_back"
+        android:summary="%s"
+        android:title="Long press back key" />
+    <com.sheard.romcontrol.prefs.IntentDialogPreference
+        includeSearch="true"
+        setSeparatorString="\##"
+        android:key="back_custom_app"
+        android:title="Choose Custom App" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Home key" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="wake_home"
+        android:summaryOff="Off"
+        android:summaryOn="On"
+        android:title="Wake up home" />
+    <com.sheard.romcontrol.prefs.MyListPreference
+        android:defaultValue="0"
+        android:entries="@array/keys_choose_entries"
+        android:entryValues="@array/keys_choose_values"
+        android:key="long_press_home"
+        android:summary="%s"
+        android:title="Home long press" />
+    <com.sheard.romcontrol.prefs.IntentDialogPreference
+        includeSearch="true"
+        setSeparatorString="\##"
+        android:key="home_custom_app"
+        android:title="Choose Custom App" />
+    <com.sheard.romcontrol.prefs.MyListPreference
+        android:defaultValue="0"
+        android:entries="@array/keys_choose_entries"
+        android:entryValues="@array/keys_choose_values"
+        android:key="double_press_home"
+        android:summary="%s"
+        android:title="Double tap home" />
+    <com.sheard.romcontrol.prefs.IntentDialogPreference
+        includeSearch="true"
+        setSeparatorString="\##"
+        android:key="double_custom_app"
+        android:title="Choose Custom App" />
+
+</PreferenceScreen><!-- From: file:/C:/Users/omaro/AndroidStudioProjects/CustomSettingsForDevs/app/src/main/res/xml/buttons_prefs.xml -->

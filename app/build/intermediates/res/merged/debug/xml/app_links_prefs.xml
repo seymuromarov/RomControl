@@ -4,8 +4,11 @@
         android:key="com.android.settings.Settings"
         android:summary="Opens your device Settings"
         android:title="Open Settings" />
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Night Mode" />
-    <PreferenceScreen android:title="Night Mode" android:key="com.google.nightmode.NightModeActivity" />
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Toolbox" />
-    <PreferenceScreen android:title="toolbox" android:key="mobi.xperiacle.s5toolbox.addon.ToolboxActivity" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Toolbox" />
+    <PreferenceScreen
+        android:key="mobi.xperiacle.s5toolbox.addon.ToolboxActivity"
+        android:title="toolbox" />
+
 </PreferenceScreen><!-- From: file:/C:/Users/omaro/AndroidStudioProjects/CustomSettingsForDevs/app/src/main/res/xml/app_links_prefs.xml -->

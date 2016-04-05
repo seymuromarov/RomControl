@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Volume Mods ♫" />
+    <PreferenceCategory android:layout="@layout/sub_category" android:title="Volume Booster Apps">
+    <PreferenceScreen android:title="Dolby Atmos" android:key="com.atmos.daxappUI.MainActivity" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Volume Button mods ♪♬" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Buttons toggle" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="volbtn_music_controls"
+        android:summaryOff="Off"
+        android:summaryOn="On"
+        android:title="Music control" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Set Delay" />
+    <com.sheard.romcontrol.prefs.MyListPreference
+        android:defaultValue="250"
+        android:dependency="volbtn_music_controls"
+        android:entries="@array/toggle_style_entries"
+        android:entryValues="@array/toggle_style_values"
+        android:key="volbtn_timeout"
+        android:summary="%s"
+        android:title="Long press delay" />
+    <PreferenceCategory
+        android:layout="@layout/sub_category"
+        android:title="Set Custom Buttons" />
+    <com.sheard.romcontrol.prefs.MyListPreference
+        android:defaultValue="87"
+        android:dependency="volbtn_music_controls"
+        android:entries="@array/volbtn_action_entries"
+        android:entryValues="@array/volbtn_action_values"
+        android:key="volbtn_vol_up"
+        android:summary="%s"
+        android:title="Volume up long press" />
+    <com.sheard.romcontrol.prefs.MyListPreference
+        android:defaultValue="88"
+        android:dependency="volbtn_music_controls"
+        android:entries="@array/volbtn_action_entries"
+        android:entryValues="@array/volbtn_action_values"
+        android:key="volbtn_vol_down"
+        android:summary="%s"
+        android:title="Volume down long press" />
+</PreferenceScreen><!-- From: file:/C:/Users/omaro/AndroidStudioProjects/CustomSettingsForDevs/app/src/main/res/xml/sound_mod_prefs.xml -->

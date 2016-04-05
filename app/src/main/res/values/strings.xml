@@ -1,12 +1,15 @@
 <resources>
-    <string name="app_name">Mods</string>
+    <string name="app_name">Ultron Settings</string>
     <string name="drawer_open">Menu opened</string>
     <string name="drawer_close">Menu closed</string>
     <string name="action_settings">Settings</string>
     <string-array name="nav_drawer_items">
+        <item>About</item>
         <item>SystemUI Mods</item>
         <item>Launcher</item>
         <item>Framework and General</item>
+        <item>Buttons</item>
+        <item>Sound</item>
         <item>Useful Apps</item>
         <item>Phone Mods</item>
         <item>Set Theme</item>
@@ -177,4 +180,47 @@
     <string name="listview_overshoot_interpolator">Overshoot</string>
     <string name="listview_anticipate_overshoot_interpolator">Anticipate overshoot</string>
     <string name="listview_bounce_interpolator">Bounce</string>
+    <string name="battery">Battery</string>
+    <string name="battery_bar">Battery Bar</string>
+    <string name="battery_bar_animation">Battery Bar Animation</string>
+    <string name="battery_bar_color">Battery Bar Color</string>
+    <string name="battery_bar_settings">Battery Bar Settings</string>
+    <string name="battery_bar_style">Battery Bar Style</string>
+    <string name="battery_bar_summary">Show/Hide battery bar, animate it, change color and style.</string>
+    <string name="battery_thickness">Thickness of Battery Bar</string>
+    <string name="colorpicker_summary">Set your desired color</string>
+    <string name="network_traffic_title">Network traffic</string>
+    <string name="network_traffic_summary">Enable various network traffic options in statusbar</string>
+    <string name="sb_traffic_title">Traffic ThinkingBridge</string>
+    <string name="sb_traffic_align_title">Traffic alignment</string>
+    <string name="sb_traffic_color_title">Traffic color</string>
+    <string name="sb_traffic_size_title">Traffic size</string>
+    <string name="sb_traffic_font_title">Traffic font</string>
+    <string name="sb_traffic_line_title">Traffic style</string>
+    <string name="sb_traffic_right">Right</string>
+    <string name="sb_traffic_left">Left</string>
+    <string name="sb_traffic_dont_show">"Don't Show"</string>
+    <string name="sb_traffic_font_normal">Normal</string>
+    <string name="sb_traffic_font_italic">Italic</string>
+    <string name="sb_traffic_font_bold">Bold</string>
+    <string name="sb_traffic_font_bold_italic">Bold Italic</string>
+    <string name="sb_traffic_font_light">Light</string>
+    <string name="sb_traffic_font_light_italic">Light Italic</string>
+    <string name="sb_traffic_font_thin">Thin</string>
+    <string name="sb_traffic_font_thin_italic">Thin Italic</string>
+    <string name="sb_traffic_font_condensed">Condensed</string>
+    <string name="sb_traffic_font_condensed_italic">Condensed Italic</string>
+    <string name="sb_traffic_font_condensed_light">Condensed Light</string>
+    <string name="sb_traffic_font_condensed_light_italic">Condensed Light Italic</string>
+    <string name="sb_traffic_font_condensed_bold">Condensed Bold</string>
+    <string name="sb_traffic_font_condensed_bold_italic">Condensed Bold Italic</string>
+    <string name="sb_traffic_font_medium">Medium</string>
+    <string name="sb_traffic_font_medium_italic">Medium Italic</string>
+    <string name="sb_traffic_font_black">Black</string>
+    <string name="sb_traffic_font_black_italic">Black Italic</string>
+    <string name="sb_traffic_adv_custom_title">Adv Text Customization</string>
+    <string name="sb_traffic_shadow_r_title">Shadow radius</string>
+    <string name="sb_traffic_shadow_x_title">Shadow Dx</string>
+    <string name="sb_traffic_shadow_y_title">Shadow Dy</string>
+    <string name="sb_traffic_shadow_c_title">Shadow color</string>
 </resources>
